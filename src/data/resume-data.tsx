@@ -120,60 +120,6 @@ export const RESUME_DATA = {
       description:
         "Development using React.js, Next.js, CSS/SCSS, JavaScript technologies. Front-End part responsive development of Figma design using Next.js. Website development for the CabinPanda Data collection platform using React.js, Git, Bitbucket and Trello as a team. Front-end development of the promotion website for Riot Forge Games using Gatsby.js, and SCSS.",
     },
-    // {
-    //   company: "Film.io",
-    //   link: "https://film.io",
-    //   badges: ["Remote"],
-    //   title: "Software Architect",
-    //   logo: ConsultlyLogo,
-    //   start: "2024",
-    //   end: null,
-    //   description:
-    //     "Leading the development of the Film.io platform. Technologies: React, TypeScript, Node.js",
-    // },
-    // {
-    //   company: "Parabol",
-    //   link: "https://parabol.co",
-    //   badges: ["Remote"],
-    //   title: "Senior Full Stack Developer",
-    //   logo: ParabolLogo,
-    //   start: "2021",
-    //   end: "2024",
-    //   description:
-    //     "Implemented new features, led a squad, improved code delivery process, and initiated migration from Emotion to Tailwind CSS. Technologies: React, TypeScript, GraphQL",
-    // },
-    // {
-    //   company: "Clevertech",
-    //   link: "https://clevertech.biz",
-    //   badges: ["Remote"],
-    //   title: "Lead Android Developer → Full Stack Developer",
-    //   logo: ClevertechLogo,
-    //   start: "2015",
-    //   end: "2021",
-    //   description:
-    //     "Created Android mobile apps and led teams for companies like Vision Media, DKMS, and AAA. Built a live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    // },
-    // {
-    //   company: "Jojo Mobile",
-    //   link: "https://bsgroup.eu/",
-    //   badges: [],
-    //   title: "Android Developer → Lead Android Developer",
-    //   logo: JojoMobileLogo,
-    //   start: "2012",
-    //   end: "2015",
-    //   description:
-    //     "Led the Android team and developed apps for major Polish companies like LOT, Polskie Radio, Agora, and PolskaPress",
-    // },
-    // {
-    //   company: "Nokia Siemens Networks",
-    //   link: "https://www.nokia.com",
-    //   badges: [],
-    //   title: "C/C++ Developer",
-    //   logo: NSNLogo,
-    //   start: "2010",
-    //   end: "2012",
-    //   description: "Developed and tested software for LTE base stations",
-    // },
   ],
   skills: [
     "JavaScript",
@@ -223,6 +169,16 @@ export const RESUME_DATA = {
       link: {
         label: "github.com",
         href: "https://github.com/cihat/sync",
+      },
+    },
+    {
+      title: "kokki",
+      techStack: ["JavaScript", "Vue", "TypeScript", "CSS", "Dockerfile", "HTML"],
+      description: "The best idea for cooking.",
+      link: {
+        label: "kokki.vercel.app",
+        href: "https://github.com/cihat/kokki",
+        // href: "https://kokki.vercel.app/",
       },
     },
     {
@@ -346,6 +302,26 @@ export const RESUME_DATA = {
       link: {
         label: "github.com",
         href: "https://github.com/cihat/delaygram",
+      },
+    },
+    {
+      title: "graduation-frontend",
+      techStack: ["University Graduation Project", "JavaScript", "Vue.js"],
+      description:
+        "The graduation project has frontend codes. Vue.js is used.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/firat-university-graduation-project/graduation-frontend",
+      },
+    },
+    {
+      title: "graduation-backend",
+      techStack: ["University Graduation Project", "JavaScript", "Socket.io", "WebRTC", "MongoDB", "Express.js"],
+      description:
+        "The graduation project has backend codes. socket.io, webRTC, mongoDB, express.js were used.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/firat-university-graduation-project/graduation-backend",
       },
     },
   ],

@@ -5,9 +5,10 @@ import {
   UpworkLogo
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { WebsiteIcon } from "@/components/icons/WebsiteIcon";
 
 export const RESUME_DATA = {
-  name: "Cihat SALIK",
+  name: "Cihat SALİK",
   initials: "CS",
   location: "Istanbul, Turkey",
   locationLink: "https://www.google.com/maps/place/istanbul",
@@ -25,6 +26,11 @@ export const RESUME_DATA = {
         name: "GitHub",
         url: "https://github.com/cihat",
         icon: GitHubIcon,
+      },
+      {
+        name: "Blog",
+        url: "https://cihat.dev",
+        icon: WebsiteIcon
       },
       {
         name: "LinkedIn",

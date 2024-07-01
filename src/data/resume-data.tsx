@@ -1,21 +1,8 @@
 import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
+  AkinonLogo,
+  JotformLogo,
+  SayprLogo,
+  UpworkLogo
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
@@ -65,6 +52,7 @@ export const RESUME_DATA = {
       link: "https://jotform.com",
       badges: ["Remote", "Istanbul"],
       title: "Junior Software Engineer",
+      logo: JotformLogo,
       start: "August 2023",
       end: null,
       description:
@@ -75,6 +63,7 @@ export const RESUME_DATA = {
       link: "https://akinon.com",
       badges: ["Remote"],
       title: "Software Engineer",
+      logo: AkinonLogo,
       start: "June 2023",
       end: "August 2023",
       description:
@@ -85,6 +74,7 @@ export const RESUME_DATA = {
       link: "https://jotform.com",
       badges: ["Remote"],
       title: "Frontend Support Engineer",
+      logo: JotformLogo,
       start: "October 2022",
       end: "May 2023",
       description:
@@ -95,6 +85,7 @@ export const RESUME_DATA = {
       link: "https://jotform.com",
       badges: ["Remote"],
       title: "Frontend Developer Intern",
+      logo: JotformLogo,
       start: "June 2022",
       end: "September 2022",
       description:
@@ -103,8 +94,9 @@ export const RESUME_DATA = {
     {
       company: "Upwork",
       link: "https://upwork.com",
-      badges: ["Remote"],
+      badges: ["Remote", "Project Based"],
       title: "Junior Software Engineer",
+      logo: UpworkLogo,
       start: "March 2022",
       end: "August 2022",
       description:
@@ -115,6 +107,7 @@ export const RESUME_DATA = {
       link: "https://saypr.com",
       badges: ["Remote"],
       title: "Junior Software Engineer",
+      logo: SayprLogo,
       start: "March 2021",
       end: "October 2021",
       description:

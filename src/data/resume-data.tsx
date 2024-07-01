@@ -42,16 +42,16 @@ export const RESUME_DATA = {
     {
       school: "Firat University",
       degree: "Bachelor's Degree in Computer Engineering",
-      start: "Oct 2018",
-      end: "Mar 2023",
+      start: "October 2018",
+      end: "March 2023",
     },
   ],
   work: [
     {
       company: "JotForm",
       link: "https://jotform.com",
-      badges: ["Remote", "Istanbul"],
-      title: "Junior Software Engineer",
+      badges: ["Istanbul"],
+      title: "Software Engineer",
       logo: JotformLogo,
       start: "August 2023",
       end: null,
@@ -72,7 +72,7 @@ export const RESUME_DATA = {
     {
       company: "JotForm",
       link: "https://jotform.com",
-      badges: ["Remote"],
+      badges: ["Remote", "Part-Time"],
       title: "Frontend Support Engineer",
       logo: JotformLogo,
       start: "October 2022",
@@ -120,7 +120,6 @@ export const RESUME_DATA = {
     "React/",
     "Next.js",
     "Node.js",
-    "GraphQL",
     "WebRTC",
     "Vue",
     "Redux",

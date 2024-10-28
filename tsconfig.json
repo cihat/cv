@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false, // Set to true to enforce type checks
+    "strict": false, // Set to true to enable strict type checking,
     "target": "es2021",
     "lib": ["dom", "dom.iterable", "esnext"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",

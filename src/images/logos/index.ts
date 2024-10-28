@@ -1,7 +1,7 @@
 import JotformLogo from "./jotform-logo.svg";
-import AkinonLogo from "./akinon-logo.png"
-import UpworkLogo from "./upwork-logo.png"
-import SayprLogo from "./saypr-logo.png"
+import AkinonLogo from "./akinon-logo.svg"
+import UpworkLogo from "./upwork-logo.jpeg"
+import SayprLogo from "./saypr-logo.jpeg"
 
 export {
   JotformLogo,

@@ -7,7 +7,12 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Cihat Salik's CV",
-  description: "Cihat Salik's CV"
+  description: "Cihat Salik's CV",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://cihat.dev",
+  }
 };
 
 // If loading a variable font, you don't need to specify the font weight

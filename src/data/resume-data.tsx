@@ -151,6 +151,61 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      "title": "Sketchbook",
+      "description": "Some methods, approaches, projects, and experiments that I have learned by trying/experimenting",
+      "techStack": ["TypeScript", "Svelte ", "Computer Science", "Rust", "other stuff"],
+      "link": {
+        "label": "sketchbook.vercel.app",
+        "href": "https://sketchbook-teal.vercel.app/",
+      }
+    },
+    {
+      "title": "MonoRepo Manager",
+      "techStack": ["TypeScript", "React", "Rust", "SCSS"],
+      "description": "A tool that allows you to manage your JS/TS monorepo projects.",
+      "link": {
+        "label": "github.com",
+        "href": "https://github.com/cihat/mr-manager",
+      }
+    },
+    {
+      "title": "chefim.net",
+      "description": "The best idea for cooking",
+      "techStack": ["TypeScript", "Vue", "SCSS", "Dockerfile", "Docker", "MongoDB", "Express.js", "Node.js", "Google Auth", "Vercel", "Render"],
+      "link": {
+        "label": "chefim.net",
+        "href": "https://chefim.net",
+      }
+    },
+    {
+      "title": "taskcard.net",
+      "description": "TaskCard is a minimalist daily planning app designed to simplify how you organize your day. Each day is represented as a card, where users can divide their time into hourly slots and plan tasks efficiently.",
+      "techStack": ["TypeScript", "Vue", "SCSS", "Dockerfile", "Docker", "MongoDB", "Express.js", "Node.js", "Google Auth", "Vercel", "Render"],
+      "link": {
+        "label": "taskcard.net",
+        "href": "https://taskcard.net",
+      }
+    },
+    {
+      "title": "Texus",
+      description: "A Terminal User Interface (TUI) application for managing frontend monorepos.",
+      "techStack": ["Rust", "Ratatui", "Tokio", "Tracing"],
+
+      "link": {
+        "label": "github.com",
+        "href": "https://github.com/cihat/texus",
+      }
+    },
+    {
+      "title": "Contribution Notes",
+      "description": "A tool to add notes to your GitHub contribution chart, making it easier to explain and remember the details behind your contributions.",
+      "techStack": ["Svelte", "TypeScript", "SCSS"],
+      "link": {
+        "href": "https://github.com/cihat/contribution-notes",
+        "label": "github.com",
+      }
+    },
+    {
       title: "stack",
       techStack: ["MongoDB", "Node.js", "Vue", "Docker"],
       description:

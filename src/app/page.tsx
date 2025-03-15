@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import { getDateDiff } from "@/lib/utils";
+import { ThemeToggle } from "@/components/toggle-theme";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -18,8 +19,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16 relative">
+      <ThemeToggle />
+      <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-4">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
@@ -102,6 +104,7 @@ export default function Page() {
         </Section>
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
+
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company} className="mb-4">
@@ -127,7 +130,7 @@ export default function Page() {
                     </h3>
 
                     <div className="flex flex-col justify-center items-center">
-                      <span className="text-sm tabular-nums text-gray-500">{work.start} - {work.end ?? "Present"}</span>
+                      <span className="text-sm tabular-nums text-gray-500 overflow-hidden text-ellipsis">{work.start} - {work.end ?? "Present"}</span>
                       {
                         work.start && work.end && (
                           <Badge variant="secondary" className="text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5">
@@ -137,7 +140,6 @@ export default function Page() {
                       }
                     </div>
                   </div>
-
                   <h4 className="font-mono text-sm leading-none print:text-[12px]">
                     {work.title}
                   </h4>
@@ -159,7 +161,7 @@ export default function Page() {
                     <h3 className="font-semibold leading-none">
                       {education.school}
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-gray-500 overflow-hidden text-ellipsis">
                       {education.start} - {education.end}
                     </div>
                   </div>

@@ -104,7 +104,7 @@ export default function Page() {
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
-              <Card key={work.company}>
+              <Card key={work.company} className="mb-4">
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
@@ -125,15 +125,16 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    {
-                      work.start && work.end && (
-                        <Badge variant="secondary" className="text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5">
-                          {getDateDiff(work.start, work.end)}
-                        </Badge>
-                      )
-                    }
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {work.start} - {work.end ?? "Present"}
+
+                    <div className="flex flex-col justify-center items-center">
+                      <span className="text-sm tabular-nums text-gray-500">{work.start} - {work.end ?? "Present"}</span>
+                      {
+                        work.start && work.end && (
+                          <Badge variant="secondary" className="text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5">
+                            {getDateDiff(work.start, work.end)}
+                          </Badge>
+                        )
+                      }
                     </div>
                   </div>
 

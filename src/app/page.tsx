@@ -9,6 +9,7 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import { getDateDiff } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -124,6 +125,13 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
+                    {
+                      work.start && work.end && (
+                        <Badge variant="secondary" className="text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5">
+                          {getDateDiff(work.start, work.end)}
+                        </Badge>
+                      )
+                    }
                     <div className="text-sm tabular-nums text-gray-500">
                       {work.start} - {work.end ?? "Present"}
                     </div>

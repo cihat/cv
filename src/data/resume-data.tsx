@@ -59,8 +59,18 @@ export const RESUME_DATA = {
       badges: ["Istanbul"],
       title: "Software Engineer",
       logo: JotformLogo,
+      start: "January 2025",
+      end: "Present",
+      description: ""
+    },
+    {
+      company: "JotForm",
+      link: "https://jotform.com",
+      badges: ["Istanbul"],
+      title: "Junior Software Engineer",
+      logo: JotformLogo,
       start: "August 2023",
-      end: null,
+      end: "January 2025",
       description:
         "Developing and enhancing a data visualization project using React.js and Highcharts.js. Rewrote the editor page of the project, adding new features using monaco-editor to edit the project's JSON structure. Implementing various calculation tools outside of the team's dashboard.",
     },

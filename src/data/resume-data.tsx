@@ -160,6 +160,15 @@ export const RESUME_DATA = {
       }
     },
     {
+      "title": "Githubba",
+      "description": "Tinder but to explore GitHub repositories",
+      "techStack": ["TypeScript", "React", "Tailwind"],
+      "link": {
+        "label": "githubba.vercel.app/",
+        "href": "https://githubba.vercel.app/",
+      }
+    },
+    {
       "title": "MonoRepo Manager",
       "techStack": ["TypeScript", "React", "Rust", "SCSS"],
       "description": "A tool that allows you to manage your JS/TS monorepo projects.",

@@ -164,8 +164,8 @@ export const RESUME_DATA = {
       "description": "Tinder but to explore GitHub repositories",
       "techStack": ["TypeScript", "React", "Tailwind"],
       "link": {
-        "label": "githubba.vercel.app/",
-        "href": "https://githubba.vercel.app/",
+        "label": "githubba.com",
+        "href": "https://githubba.com/",
       }
     },
     {

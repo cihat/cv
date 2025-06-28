@@ -28,6 +28,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                function updateTheme() {
+                  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  document.documentElement.classList.toggle('dark', isDark);
+                  document.head
+                    .querySelector('meta[name=theme-color]')
+                    ?.setAttribute('content', isDark ? '#1c1c1c' : '#fcfcfc');
+                }
+                
+                updateTheme();
+                
+                window.matchMedia('(prefers-color-scheme: dark)')
+                  .addEventListener('change', updateTheme);
+              })();
+            `,
+          }}
+        />
+      </head>
       <body>{children}</body>
       <Analytics />
     </html>

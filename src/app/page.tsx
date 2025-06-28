@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import { getDateDiff } from "@/lib/utils";
-import { ThemeToggle } from "@/components/toggle-theme";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -20,7 +19,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16 relative">
-      <ThemeToggle />
       <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-4">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
@@ -181,6 +179,23 @@ export default function Page() {
                 <Badge className="print:text-[10px]" key={skill}>
                   {skill}
                 </Badge>
+              );
+            })}
+          </div>
+        </Section>
+
+        <Section>
+          <h2 className="text-xl font-bold">Apps</h2>
+          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {RESUME_DATA.apps.map((app) => {
+              return (
+                <ProjectCard
+                  key={app.title}
+                  title={app.title}
+                  description={app.description}
+                  tags={app.techStack}
+                  link={app.link.href}
+                />
               );
             })}
           </div>

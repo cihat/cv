@@ -397,4 +397,60 @@ export const RESUME_DATA = {
       },
     },
   ],
+  apps: [
+    {
+      title: "TaskCard",
+      description: "Auto-postponing task planner with intelligent time blocking. Drag & drop tasks into time slots, set priorities, and let smart postponement system automatically reschedule missed tasks.",
+      techStack: ["Swift", "SwiftUI", "iOS", "macOS"],
+      link: {
+        label: "App Store",
+        href: "https://apps.apple.com/tr/app/taskcard/id6747799762",
+      }
+    },
+    {
+      title: "SwiftDays",
+      description: "Watch Your Counted Days Fly. Track important dates and deadlines with beautiful countdown timers, customizable widgets, and timely notifications.",
+      techStack: ["Swift", "SwiftUI", "WidgetKit", "iOS", "macOS"],
+      link: {
+        label: "App Store",
+        href: "https://apps.apple.com/tr/app/swiftdays/id6747647326",
+      }
+    },
+    {
+      title: "StreakChart",
+      description: "Visual Habit Tracking with beautiful charts. Build momentum with color-coded squares that show your progress at a glance, just like GitHub's contribution graph.",
+      techStack: ["Swift", "SwiftUI", "SwiftData", "iOS", "macOS"],
+      link: {
+        label: "App Store",
+        href: "https://apps.apple.com/tr/app/streakchart/id6747408568",
+      }
+    },
+    {
+      title: "StarType",
+      description: "Fast-Paced Typing Space Adventure. Navigate through asteroid fields, battle enemy ships, and save the galaxy while improving your typing speed and accuracy.",
+      techStack: ["Swift", "SwiftUI", "SpriteKit", "iOS", "macOS"],
+      link: {
+        label: "App Store",
+        href: "https://apps.apple.com/tr/app/startype/id6747320692",
+      }
+    },
+    {
+      title: "githubba",
+      description: "Swipe to discover GitHub repos. Tinder-style interface for discovering curated repositories, with GitHub integration and personalized recommendations.",
+      techStack: ["Swift", "SwiftUI", "GitHub API", "iOS", "macOS"],
+      link: {
+        label: "App Store",
+        href: "https://apps.apple.com/tr/app/githubba/id6747093581",
+      }
+    },
+    {
+      title: "TrackLens",
+      description: "Record screen with camera overlay in stunning 4K quality. Professional screen recording solution for content creators, educators, and professionals.",
+      techStack: ["Swift", "SwiftUI", "AVFoundation", "macOS"],
+      link: {
+        label: "Mac App Store",
+        href: "https://apps.apple.com/tr/app/tracklens/id6747600890",
+      }
+    }
+  ],
 } as const;

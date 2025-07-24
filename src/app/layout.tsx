@@ -6,14 +6,11 @@ import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Cihat Salik - Software Engineer | iOS Developer & Full Stack Developer",
-  description: "Experienced Software Engineer specialized in iOS development (Swift, SwiftUI), full-stack web development (React, Next.js, Vue), and mobile app creation. Based in Istanbul, Turkey.",
+  title: "Cihat Salik - Software Engineer",
+  description: "Experienced Software Engineer specialized in full-stack web development (React, Next.js, Vue), mobile app development, and software engineering. Based in Istanbul, Turkey.",
   keywords: [
     "Cihat Salik",
     "Software Engineer",
-    "iOS Developer", 
-    "Swift Developer",
-    "SwiftUI",
     "Full Stack Developer",
     "React Developer",
     "Next.js Developer",
@@ -36,8 +33,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://cihat.dev",
-    title: "Cihat Salik - Software Engineer | iOS Developer & Full Stack Developer",
-    description: "Experienced Software Engineer specialized in iOS development (Swift, SwiftUI), full-stack web development (React, Next.js, Vue), and mobile app creation. Based in Istanbul, Turkey.",
+    title: "Cihat Salik - Software Engineer",
+    description: "Experienced Software Engineer specialized in full-stack web development (React, Next.js, Vue), mobile app development, and software engineering. Based in Istanbul, Turkey.",
     siteName: "Cihat Salik's Portfolio",
     images: [
       {
@@ -50,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cihat Salik - Software Engineer | iOS Developer & Full Stack Developer",
-    description: "Experienced Software Engineer specialized in iOS development (Swift, SwiftUI), full-stack web development (React, Next.js, Vue), and mobile app creation.",
+    title: "Cihat Salik - Software Engineer",
+    description: "Experienced Software Engineer specialized in full-stack web development (React, Next.js, Vue), mobile app development, and software engineering.",
     creator: "@chtslk",
     images: ["https://avatars.githubusercontent.com/u/57585087?v=4"]
   },

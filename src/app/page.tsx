@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
+import { PrintDrawer } from "@/components/print-drawer";
 import { Metadata } from "next";
 import Image from "next/image";
 import { Section } from "@/components/ui/section";
@@ -12,11 +13,11 @@ import { ProjectCard } from "@/components/project-card";
 import { getDateDiff } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} - CV | Software Engineer & iOS Developer`,
-  description: `${RESUME_DATA.summary} View my work experience at JotForm, projects, iOS apps, and technical skills.`,
+  title: `${RESUME_DATA.name} - CV | Software Engineer`,
+  description: `${RESUME_DATA.summary} View my work experience at JotForm, projects, and technical skills.`,
   openGraph: {
-    title: `${RESUME_DATA.name} - CV | Software Engineer & iOS Developer`,
-    description: `${RESUME_DATA.summary} View my work experience, projects, and iOS apps.`,
+    title: `${RESUME_DATA.name} - CV | Software Engineer`,
+    description: `${RESUME_DATA.summary} View my work experience and projects.`,
     url: "https://cihat.dev",
     images: [
       {
@@ -130,16 +131,12 @@ export default function Page() {
                 ))}
               </div>
               <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex print:text-[12px]">
-                {RESUME_DATA.contact.email ? (
-                  <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                    <span className="underline">{RESUME_DATA.contact.email}</span>
-                  </a>
-                ) : null}
-                {RESUME_DATA.contact?.tel ? (
-                  <a href={`tel:${RESUME_DATA.contact?.tel}`}>
-                    <span className="underline">{RESUME_DATA.contact?.tel}</span>
-                  </a>
-                ) : null}
+                <div className="print:flex print:flex-col print:gap-y-1">
+                  <div>github: <a href="https://github.com/cihat/" className="underline">@http://github.com/cihat/</a></div>
+                  <div>apps: <a href="https://apps.cihat.dev/" className="underline">@https://apps.cihat.dev/</a></div>
+                  <div>website: <a href="https://cihat.dev/" className="underline">@https://cihat.dev/</a></div>
+                  <div>mail: <a href={`mailto:${RESUME_DATA.contact.email}`} className="underline">{RESUME_DATA.contact.email}</a></div>
+                </div>
               </div>
             </div>
 
@@ -241,7 +238,7 @@ export default function Page() {
           <Section>
             <h2 className="text-xl font-bold">Apps</h2>
             <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-              {RESUME_DATA.apps.map((app) => {
+              {RESUME_DATA.apps.slice(0, 6).map((app) => {
                 return (
                   <ProjectCard
                     key={app.title}
@@ -253,12 +250,15 @@ export default function Page() {
                 );
               })}
             </div>
+            <p className="hidden print:block text-xs text-muted-foreground mt-2">
+              More apps available at: <a href="https://apps.cihat.dev/" className="underline">apps.cihat.dev</a>
+            </p>
           </Section>
 
           <Section className="print-force-new-page scroll-mb-16">
             <h2 className="text-xl font-bold">Projects</h2>
             <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-              {RESUME_DATA.projects.map((project) => {
+              {RESUME_DATA.projects.slice(0, 6).map((project) => {
                 return (
                   <ProjectCard
                     key={project.title}
@@ -270,6 +270,9 @@ export default function Page() {
                 );
               })}
             </div>
+            <p className="hidden print:block text-xs text-muted-foreground mt-2">
+              More projects available at: <a href="https://github.com/cihat/" className="underline">github.com/cihat</a>
+            </p>
           </Section>
         </section>
 
@@ -285,6 +288,7 @@ export default function Page() {
             })),
           ]}
         />
+        <PrintDrawer />
       </main>
     </>
   );

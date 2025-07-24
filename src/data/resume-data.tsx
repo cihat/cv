@@ -39,7 +39,7 @@ export const RESUME_DATA = {
       },
       {
         name: "X",
-        url: "https://x.com/chtslk",
+        url: "https://x.com/cet1nbey",
         icon: XIcon,
       },
     ],
@@ -61,7 +61,7 @@ export const RESUME_DATA = {
       logo: JotformLogo,
       start: "January 2025",
       end: "Present",
-      description: ""
+      description: "Working on multiple product within JotForm's ecosystem. Developing new features, fixing bugs, and improving user experience across various platforms. Utilizing React, Redux, SCSS, styled-components, and in-house technologies for consistent and maintainable codebase."
     },
     {
       company: "JotForm",
@@ -74,17 +74,17 @@ export const RESUME_DATA = {
       description:
         "Developing and enhancing a data visualization project using React.js and Highcharts.js. Rewrote the editor page of the project, adding new features using monaco-editor to edit the project's JSON structure. Implementing various calculation tools outside of the team's dashboard.",
     },
-    {
-      company: "Akinon",
-      link: "https://akinon.com",
-      badges: ["Remote"],
-      title: "Software Engineer",
-      logo: AkinonLogo,
-      start: "June 2023",
-      end: "August 2023",
-      description:
-        "Developed Web Components written in Pure JavaScript and updated them based on customer requests. Fixed frontend bugs of many major e-commerce sites in Turkey together with the team. Conducted task allocation using Agile management with the team via Jira.",
-    },
+    // {
+    //   company: "Akinon",
+    //   link: "https://akinon.com",
+    //   badges: ["Remote"],
+    //   title: "Software Engineer",
+    //   logo: AkinonLogo,
+    //   start: "June 2023",
+    //   end: "August 2023",
+    //   description:
+    //     "Developed Web Components written in Pure JavaScript and updated them based on customer requests. Fixed frontend bugs of many major e-commerce sites in Turkey together with the team. Conducted task allocation using Agile management with the team via Jira.",
+    // },
     {
       company: "JotForm",
       link: "https://jotform.com",

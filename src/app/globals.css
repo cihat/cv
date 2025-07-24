@@ -124,3 +124,61 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Print styles */
+@media print {
+  /* Hide unnecessary elements */
+  .print\:hidden {
+    display: none !important;
+  }
+  
+  /* Hide command menu and print drawer */
+  [data-radix-popper-content-wrapper],
+  .fixed {
+    display: none !important;
+  }
+  
+  /* Reduce spacing for print */
+  .print\:space-y-4 > * + * {
+    margin-top: 1rem !important;
+  }
+  
+  /* Force new page */
+  .print-force-new-page {
+    page-break-before: always;
+  }
+  
+  /* Hide most projects and apps, show only first few */
+  .print\:grid-cols-3 > *:nth-child(n+7) {
+    display: none !important;
+  }
+  
+  /* Ensure text is readable */
+  .print\:text-\[12px\] {
+    font-size: 12px !important;
+  }
+  
+  .print\:text-\[10px\] {
+    font-size: 10px !important;
+  }
+  
+  .print\:text-\[8px\] {
+    font-size: 8px !important;
+  }
+  
+  /* Reduce padding for print */
+  .print\:p-12 {
+    padding: 3rem !important;
+  }
+  
+  /* Ensure links are visible */
+  a {
+    color: inherit !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Hide badges in print for cleaner look */
+  .print\:hidden-badges {
+    display: none !important;
+  }
+}

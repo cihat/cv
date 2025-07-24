@@ -158,40 +158,46 @@ export default function Page() {
               return (
                 <Card key={work.company} className="mb-4">
                   <CardHeader>
-                    <div className="flex items-center justify-between gap-x-2 text-base">
-                      <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                        <Image src={work.logo} width={36} height={36} alt={`${work.company} company logo`} className="object-cover rounded-full border-solid border-2 border-gray-200" />
-                        <a className="hover:underline" href={work.link}>
-                          {work.company}
-                        </a>
-
-                        <span className="inline-flex gap-x-1">
-                          {work.badges.map((badge) => (
-                            <Badge
-                              variant="secondary"
-                              className="align-middle text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5"
-                              key={badge}
-                            >
-                              {badge}
-                            </Badge>
-                          ))}
+                    <div className="flex items-start justify-between gap-x-4">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-x-2 mb-2">
+                          <Image src={work.logo} width={36} height={36} alt={`${work.company} company logo`} className="object-cover rounded-full border-solid border-2 border-gray-200" />
+                          <div className="flex items-center gap-x-2">
+                            <a className="hover:underline font-semibold text-base" href={work.link}>
+                              {work.company}
+                            </a>
+                            <span className="inline-flex gap-x-1">
+                              {work.badges.map((badge) => (
+                                <Badge
+                                  variant="secondary"
+                                  className="align-middle text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5"
+                                  key={badge}
+                                >
+                                  {badge}
+                                </Badge>
+                              ))}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-x-2">
+                          <h4 className="font-mono text-sm leading-none print:text-[12px] font-medium">
+                            {work.title}
+                          </h4>
+                          {
+                            work.start && work.end && (
+                              <Badge variant="outline" className="text-[10px] print:text-[8px] print:leading-tight print:px-1 print:py-0.5 px-2 py-0.5 text-gray-600 dark:text-gray-400 border-gray-300 dark:border-gray-600">
+                                {getDateDiff(work.start, work.end)}
+                              </Badge>
+                            )
+                          }
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <span className="text-sm tabular-nums text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap">
+                          {work.start} - {work.end ?? "Present"}
                         </span>
-                      </h3>
-
-                      <div className="flex flex-col justify-center items-center">
-                        <span className="text-sm tabular-nums text-gray-500 overflow-hidden text-ellipsis">{work.start} - {work.end ?? "Present"}</span>
-                        {
-                          work.start && work.end && (
-                            <Badge variant="secondary" className="text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5">
-                              {getDateDiff(work.start, work.end)}
-                            </Badge>
-                          )
-                        }
                       </div>
                     </div>
-                    <h4 className="font-mono text-sm leading-none print:text-[12px]">
-                      {work.title}
-                    </h4>
                   </CardHeader>
                   <CardContent className="mt-2 text-xs print:text-[10px]">
                     {work.description}
@@ -224,10 +230,10 @@ export default function Page() {
           </Section>
           <Section>
             <h2 className="text-xl font-bold">Skills</h2>
-            <div className="flex flex-wrap gap-1">
+            <div className="flex flex-wrap gap-2">
               {RESUME_DATA.skills.map((skill) => {
                 return (
-                  <Badge className="print:text-[10px]" key={skill}>
+                  <Badge variant="outline" className="print:text-[10px] hover:scale-105 transition-transform" key={skill}>
                     {skill}
                   </Badge>
                 );

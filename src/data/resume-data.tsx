@@ -13,9 +13,9 @@ export const RESUME_DATA = {
   location: "Istanbul, Turkey",
   locationLink: "https://www.google.com/maps/place/istanbul",
   about:
-    "Software Engineer specialized in frontend development and cross-platform apps. Passionate about open source, developer tooling, and game development with Rust & Swift.",
+    "Software Engineer specialized in frontend development and cross-platform apps. Passionate about open source and developer tooling with Rust & Swift.",
   summary:
-    "Versatile Software Engineer with experience in building scalable frontend applications, cross-platform apps, and developer tools. Skilled in React, TypeScript, and Rust with a growing focus on game development. Passionate about open source and continuously learning new technologies.",
+    "Versatile Software Engineer with experience in building scalable frontend applications, cross-platform apps, and developer tools. Skilled in React, TypeScript, and Rust. Passionate about open source and continuously learning new technologies.",
   avatarUrl: "https://avatars.githubusercontent.com/u/57585087?v=4",
   personalWebsiteUrl: "https://cihat.dev",
   contact: {

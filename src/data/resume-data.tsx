@@ -13,9 +13,9 @@ export const RESUME_DATA = {
   location: "Istanbul, Turkey",
   locationLink: "https://www.google.com/maps/place/istanbul",
   about:
-    "Software Engineer who enjoys researching, learning and developing. I love open source.",
+    "Software Engineer specialized in frontend development and cross-platform apps. Passionate about open source, developer tooling, and game development with Rust & Swift.",
   summary:
-    "A curious Software Engineer living in Istanbul/Turkey who enjoys researching, learning and developing. I love open source development and I am building something on my Github.",
+    "Versatile Software Engineer with experience in building scalable frontend applications, cross-platform apps, and developer tools. Skilled in React, TypeScript, and Rust with a growing focus on game development. Passionate about open source and continuously learning new technologies.",
   avatarUrl: "https://avatars.githubusercontent.com/u/57585087?v=4",
   personalWebsiteUrl: "https://cihat.dev",
   contact: {
@@ -72,7 +72,7 @@ export const RESUME_DATA = {
       start: "August 2023",
       end: "January 2025",
       description:
-        "Developing and enhancing a data visualization project using React.js and Highcharts.js. Rewrote the editor page of the project, adding new features using monaco-editor to edit the project's JSON structure. Implementing various calculation tools outside of the team's dashboard.",
+        "Enhanced a data visualization project using React.js and Highcharts.js. Rewrote the editor page with monaco-editor, enabling JSON editing and new calculation tools. Improved team workflow efficiency and reduced manual dashboard operations."
     },
     // {
     //   company: "Akinon",
@@ -130,25 +130,13 @@ export const RESUME_DATA = {
         "Development using React.js, Next.js, CSS/SCSS, JavaScript technologies. Front-End part responsive development of Figma design using Next.js. Website development for the CabinPanda Data collection platform using React.js, Git, Bitbucket and Trello as a team. Front-end development of the promotion website for Riot Forge Games using Gatsby.js, and SCSS.",
     },
   ],
-  skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/",
-    "Next.js",
-    "Node.js",
-    "WebRTC",
-    "Vue",
-    "Redux",
-    "Pinia",
-    "Vite.js",
-    "Express.js",
-    "MongoDB",
-    "Mongoose",
-    "SCSS/CSS",
-    "HTML",
-    "Docker",
-    "Vim",
-  ],
+  skills: {
+    "Core": ["JavaScript", "TypeScript", "React", "Next.js", "Vue", "Rust", "Swift", "SwiftUI"],
+    "Backend": ["Node.js", "Express.js", "MongoDB", "Mongoose"],
+    "Frontend Tools": ["Redux", "Pinia", "Vite.js", "SCSS/CSS", "HTML"],
+    "DevOps / Tools": ["Docker", "Vercel", "Render", "Upstash", "Google Auth", "docker-compose"],
+    "Other": ["Highcharts.js", "Vim", "Git", "some bash tools..."]
+  },
   projects: [
     {
       "title": "Sketchbook",

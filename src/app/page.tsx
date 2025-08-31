@@ -56,7 +56,9 @@ const structuredData = {
     "name": "JotForm",
     "url": "https://jotform.com"
   },
-  "knowsAbout": RESUME_DATA.skills,
+  "knowsAbout": Array.isArray(RESUME_DATA.skills)
+    ? RESUME_DATA.skills
+    : Object.values(RESUME_DATA.skills).flat(),
   "hasOccupation": {
     "@type": "Occupation",
     "name": "Software Engineer",
@@ -230,12 +232,23 @@ export default function Page() {
           </Section>
           <Section>
             <h2 className="text-xl font-bold">Skills</h2>
-            <div className="flex flex-wrap gap-2">
-              {RESUME_DATA.skills.map((skill) => {
+            <div className="space-y-3">
+              {Object.entries(RESUME_DATA.skills).map(([category, skills]) => {
                 return (
-                  <Badge variant="outline" className="print:text-[10px] hover:scale-105 transition-transform" key={skill}>
-                    {skill}
-                  </Badge>
+                  <div key={category}>
+                    <h3 className="font-mono text-sm text-muted-foreground mb-1 print:text-[12px]">{category}</h3>
+                    <div className="flex flex-wrap gap-2">
+                      {skills.map((skill) => (
+                        <Badge
+                          variant="outline"
+                          className="print:text-[10px] hover:scale-105 transition-transform"
+                          key={skill}
+                        >
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
                 );
               })}
             </div>

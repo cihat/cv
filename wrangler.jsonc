@@ -1,0 +1,12 @@
+{
+  "main": ".open-next/worker.js",
+  "name": "cv-cihat-dev",
+  "compatibility_date": "2025-10-02",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  }
+}

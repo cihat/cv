@@ -396,24 +396,6 @@ export const RESUME_DATA = {
       }
     },
     {
-      title: "SwiftDays",
-      description: "Track important dates and deadlines with beautiful countdown timers. Create unlimited countdowns with customizable widgets and timely notifications.",
-      techStack: ["Swift", "SwiftUI", "WidgetKit", "iOS", "macOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/swiftdays/id6747647326",
-      }
-    },
-    {
-      title: "StreakChart",
-      description: "Visual habit tracking with beautiful charts. Build momentum with color-coded squares that show your progress at a glance, just like GitHub's contribution graph.",
-      techStack: ["Swift", "SwiftUI", "SwiftData", "iOS", "macOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/streakchart/id6747408568",
-      }
-    },
-    {
       title: "StarType",
       description: "Fast-paced typing space adventure. Navigate through asteroid fields, battle enemy ships, and save the galaxy while improving your typing speed and accuracy.",
       techStack: ["Swift", "SwiftUI", "SpriteKit", "iOS", "macOS"],
@@ -441,33 +423,6 @@ export const RESUME_DATA = {
       }
     },
     {
-      title: "FluidCanvas",
-      description: "Digital marbling art application using Apple's Metal Performance Shaders for real-time fluid dynamics simulation. Create stunning patterns with physics-accurate color mixing.",
-      techStack: ["Swift", "SwiftUI", "Metal", "iOS", "macOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/githubba/id6747934351",
-      }
-    },
-    {
-      title: "Chefim",
-      description: "Smart recipe finder using AI to suggest personalized recipes based on ingredients you have at home. Transform your kitchen ingredients into delicious meals.",
-      techStack: ["Swift", "SwiftUI", "AI", "iOS", "macOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/chefim/id6747953986",
-      }
-    },
-    {
-      title: "PassportPro",
-      description: "Passport & visa photo editor with automatic formatting for 10+ countries. Create professional photos with face detection and print-ready export layouts.",
-      techStack: ["Swift", "SwiftUI", "Core Image", "iOS", "macOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/passportpro/id6748263822",
-      }
-    },
-    {
       title: "IconSizer",
       description: "Instant app icon resizer for iOS, macOS, iPadOS, and watchOS. Convert 1024x1024 icons into all required sizes for Xcode projects.",
       techStack: ["Swift", "SwiftUI", "macOS"],
@@ -477,48 +432,12 @@ export const RESUME_DATA = {
       }
     },
     {
-      title: "Convertify",
-      description: "All-in-one offline file converter for documents, images, audio, video, archives, and units. No internet required, all processing on-device.",
-      techStack: ["Swift", "SwiftUI", "PDFKit", "AVFoundation", "CoreImage", "iOS", "macOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/convertify/id6748287120",
-      }
-    },
-    {
-      title: "PhotoSizer",
-      description: "Privacy-first image compressor and resizer with AI-optimized quality retention. Reduce file sizes up to 90% while maintaining image quality.",
-      techStack: ["Swift", "SwiftUI", "Core Image", "iOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/photosizer/id6748417488",
-      }
-    },
-    {
       title: "WordHabit",
       description: "Offline flashcards & SRS vocabulary trainer. Import custom word lists, use spaced repetition, and track progress with detailed statistics.",
       techStack: ["Swift", "SwiftUI", "Core Data", "iOS", "macOS"],
       link: {
         label: "App Store",
         href: "https://apps.apple.com/tr/app/wordhabit/id6748560380",
-      }
-    },
-    {
-      title: "Chrono Tap",
-      description: "Perfect millisecond reflex game with multiple modes. Challenge your timing precision with Classic, Precision, Blindfold, and Marathon modes.",
-      techStack: ["Swift", "SwiftUI", "iOS", "macOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/chrono-tap/id6748554830",
-      }
-    },
-    {
-      title: "Italian Brainrot",
-      description: "Learn Italian through fun character quizzes. Over 100 unique characters with authentic pronunciation and multiple difficulty levels.",
-      techStack: ["Swift", "SwiftUI", "iOS", "macOS"],
-      link: {
-        label: "App Store",
-        href: "https://apps.apple.com/tr/app/italianbrainrot/id6748560381",
       }
     }
   ],
